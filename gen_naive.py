@@ -54,3 +54,4 @@ layer_output = graph.get_tensor_by_name("import/%s:0" % name)
 img_noise = np.random.uniform(size=(224, 224, 3)) + 100.0
 # 调用render_naive函数渲染
 render_naive(layer_output[:, :, :, channel], img_noise, iter_n=20)
+
